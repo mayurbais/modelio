@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="overview diagram" version="4">
+  <OBJECT>
+    <ID name="overview diagram" mc="Standard.ClassDiagram" uid="fba7838d-410e-4559-aad2-64b656a56371"/>
+    <PID name="project1" mc="Standard.Package" uid="211da0fe-eef1-4aab-99bf-931573e9cf39"/>
+    <ATTRIBUTES>
+      <ATT name="UiDataVersion">0</ATT>
+      <ATT name="UiData"></ATT>
+      <ATT name="PdeProperties"></ATT>
+      <ATT name="Name"><![CDATA[overview diagram]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>
