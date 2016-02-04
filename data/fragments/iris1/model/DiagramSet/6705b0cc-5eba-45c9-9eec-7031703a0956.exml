@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="iris1" version="4">
+  <OBJECT>
+    <ID name="iris1" mc="Standard.DiagramSet" uid="6705b0cc-5eba-45c9-9eec-7031703a0956"/>
+    <PID name="iris1" mc="Standard.Project" uid="7fa8ee5c-2573-43a0-9c01-ac366c8c74ee"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[iris1]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,176 @@
+<uml:Model xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:version="2.0" xmi:id="_JdkukLZPEeWA56eHuplmrg" name="model">
+<eAnnotations xmi:id="_JdkukbZPEeWA56eHuplmrg" source="genmymodel">
+<details xmi:id="_JdkukrZPEeWA56eHuplmrg" key="uuid" value="d2b8f9d1-9ed6-43b2-a83e-d925e6748eac"/>
+</eAnnotations>
+<packageImport xmi:id="_Jdkuk7ZPEeWA56eHuplmrg">
+<eAnnotations xmi:id="_JdkulLZPEeWA56eHuplmrg" source="genmymodel">
+<details xmi:id="_JdkulbZPEeWA56eHuplmrg" key="uuid" value="_cB9bAEJ4EeWyUah0AtdRCQ"/>
+</eAnnotations>
+<importedPackage href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#/"/>
+</packageImport>
+<packageImport xmi:id="_JdkulrZPEeWA56eHuplmrg">
+<eAnnotations xmi:id="_Jdkul7ZPEeWA56eHuplmrg" source="genmymodel">
+<details xmi:id="_JdkumLZPEeWA56eHuplmrg" key="uuid" value="_cCJoQEJ4EeWyUah0AtdRCQ"/>
+</eAnnotations>
+<importedPackage href="pathmap://GENMYMODEL_LIBRARIES/GenMyModelPrimitiveTypes.library.uml#/"/>
+</packageImport>
+<packagedElement xsi:type="uml:Class" xmi:id="_JdkumbZPEeWA56eHuplmrg" name="MultipleRelationalEntity">
+<eAnnotations xmi:id="_JdkumrZPEeWA56eHuplmrg" source="genmymodel">
+<details xmi:id="_Jdkum7ZPEeWA56eHuplmrg" key="uuid" value="_hlca8SSmEDOo-bsjhpyXmg"/>
+</eAnnotations>
+</packagedElement>
+<packagedElement xsi:type="uml:Class" xmi:id="_JdkunLZPEeWA56eHuplmrg" name="OneToOneOwnerEntity">
+<eAnnotations xmi:id="_JdkunbZPEeWA56eHuplmrg" source="genmymodel">
+<details xmi:id="_JdkunrZPEeWA56eHuplmrg" key="uuid" value="_jpGUwCSmEDOo-bsjhpyXmg"/>
+</eAnnotations>
+</packagedElement>
+<packagedElement xsi:type="uml:Class" xmi:id="_Jdkun7ZPEeWA56eHuplmrg" name="OneToManyEntity">
+<eAnnotations xmi:id="_JdkuoLZPEeWA56eHuplmrg" source="genmymodel">
+<details xmi:id="_JdkuobZPEeWA56eHuplmrg" key="uuid" value="_ku_l0CSmEDOo-bsjhpyXmg"/>
+</eAnnotations>
+</packagedElement>
+<packagedElement xsi:type="uml:Class" xmi:id="_JdkuorZPEeWA56eHuplmrg" name="ManyToManyOwnerEntity">
+<eAnnotations xmi:id="_Jdkuo7ZPEeWA56eHuplmrg" source="genmymodel">
+<details xmi:id="_JdkupLZPEeWA56eHuplmrg" key="uuid" value="_lMxG8CSmEDOo-bsjhpyXmg"/>
+</eAnnotations>
+</packagedElement>
+<packagedElement xsi:type="uml:Class" xmi:id="_JdkupbZPEeWA56eHuplmrg" name="OneToOneOwnerCustomFieldEntity">
+<eAnnotations xmi:id="_JdkuprZPEeWA56eHuplmrg" source="genmymodel">
+<details xmi:id="_Jdkup7ZPEeWA56eHuplmrg" key="uuid" value="_pL_8oCSmEDOo-bsjhpyXmg"/>
+</eAnnotations>
+</packagedElement>
+<packagedElement xsi:type="uml:Class" xmi:id="_JdkuqLZPEeWA56eHuplmrg" name="OneToManyCustomFieldEntity">
+<eAnnotations xmi:id="_JdkuqbZPEeWA56eHuplmrg" source="genmymodel">
+<details xmi:id="_JdkuqrZPEeWA56eHuplmrg" key="uuid" value="_tSi7QCSmEDOo-bsjhpyXmg"/>
+</eAnnotations>
+</packagedElement>
+<packagedElement xsi:type="uml:Class" xmi:id="_Jdkuq7ZPEeWA56eHuplmrg" name="ManyToManyOwnerCustomFieldEntity">
+<eAnnotations xmi:id="_JdkurLZPEeWA56eHuplmrg" source="genmymodel">
+<details xmi:id="_JdkurbZPEeWA56eHuplmrg" key="uuid" value="_vaL9MCSmEDOo-bsjhpyXmg"/>
+</eAnnotations>
+</packagedElement>
+<packagedElement xsi:type="uml:Association" xmi:id="_JdkurrZPEeWA56eHuplmrg" name="MultipleRelationalEntity_OneToOneOwnerEntity" memberEnd="_JdkusbZPEeWA56eHuplmrg _JdkutrZPEeWA56eHuplmrg" navigableOwnedEnd="_JdkusbZPEeWA56eHuplmrg _JdkutrZPEeWA56eHuplmrg">
+<eAnnotations xmi:id="_Jdkur7ZPEeWA56eHuplmrg" source="genmymodel">
+<details xmi:id="_JdkusLZPEeWA56eHuplmrg" key="uuid" value="_HEpAUCSnEDOo-bsjhpyXmg"/>
+</eAnnotations>
+<ownedEnd xmi:id="_JdkusbZPEeWA56eHuplmrg" name="oneToOneOwnerEntity" type="_JdkunLZPEeWA56eHuplmrg" aggregation="shared" association="_JdkurrZPEeWA56eHuplmrg">
+<eAnnotations xmi:id="_JdkusrZPEeWA56eHuplmrg" source="genmymodel">
+<details xmi:id="_Jdkus7ZPEeWA56eHuplmrg" key="uuid" value="_HEmkECSnEDOo-bsjhpyXmg"/>
+</eAnnotations>
+<lowerValue xsi:type="uml:LiteralInteger" xmi:id="_JdkutLZPEeWA56eHuplmrg" value="1"/>
+<upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_JdkutbZPEeWA56eHuplmrg" value="1"/>
+</ownedEnd>
+<ownedEnd xmi:id="_JdkutrZPEeWA56eHuplmrg" name="multipleRelationalEntity" type="_JdkumbZPEeWA56eHuplmrg" association="_JdkurrZPEeWA56eHuplmrg">
+<eAnnotations xmi:id="_Jdkut7ZPEeWA56eHuplmrg" source="genmymodel">
+<details xmi:id="_JdkuuLZPEeWA56eHuplmrg" key="uuid" value="_HEoZQCSnEDOo-bsjhpyXmg"/>
+</eAnnotations>
+<lowerValue xsi:type="uml:LiteralInteger" xmi:id="_JdkuubZPEeWA56eHuplmrg" value="1"/>
+<upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_JdkuurZPEeWA56eHuplmrg" value="1"/>
+</ownedEnd>
+</packagedElement>
+<packagedElement xsi:type="uml:Association" xmi:id="_Jdkuu7ZPEeWA56eHuplmrg" name="MultipleRelationalEntity_OneToManyEntity" memberEnd="_JdkuvrZPEeWA56eHuplmrg _Jdkuw7ZPEeWA56eHuplmrg" navigableOwnedEnd="_JdkuvrZPEeWA56eHuplmrg _Jdkuw7ZPEeWA56eHuplmrg">
+<eAnnotations xmi:id="_JdkuvLZPEeWA56eHuplmrg" source="genmymodel">
+<details xmi:id="_JdkuvbZPEeWA56eHuplmrg" key="uuid" value="_avYFkCSnEDOo-bsjhpyXmg"/>
+</eAnnotations>
+<ownedEnd xmi:id="_JdkuvrZPEeWA56eHuplmrg" name="oneToManyEntity" type="_Jdkun7ZPEeWA56eHuplmrg" aggregation="shared" association="_Jdkuu7ZPEeWA56eHuplmrg">
+<eAnnotations xmi:id="_Jdkuv7ZPEeWA56eHuplmrg" source="genmymodel">
+<details xmi:id="_JdkuwLZPEeWA56eHuplmrg" key="uuid" value="_avVCQCSnEDOo-bsjhpyXmg"/>
+</eAnnotations>
+<lowerValue xsi:type="uml:LiteralInteger" xmi:id="_JdkuwbZPEeWA56eHuplmrg" value="1"/>
+<upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_JdkuwrZPEeWA56eHuplmrg" value="1"/>
+</ownedEnd>
+<ownedEnd xmi:id="_Jdkuw7ZPEeWA56eHuplmrg" name="multipleRelationalEntity" type="_JdkumbZPEeWA56eHuplmrg" association="_Jdkuu7ZPEeWA56eHuplmrg">
+<eAnnotations xmi:id="_JdkuxLZPEeWA56eHuplmrg" source="genmymodel">
+<details xmi:id="_JdkuxbZPEeWA56eHuplmrg" key="uuid" value="_avXegCSnEDOo-bsjhpyXmg"/>
+</eAnnotations>
+<lowerValue xsi:type="uml:LiteralInteger" xmi:id="_JdkuxrZPEeWA56eHuplmrg"/>
+<upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_Jdkux7ZPEeWA56eHuplmrg" value="*"/>
+</ownedEnd>
+</packagedElement>
+<packagedElement xsi:type="uml:Association" xmi:id="_JdkuyLZPEeWA56eHuplmrg" name="MultipleRelationalEntity_ManyToManyOwnerEntity" memberEnd="_Jdkuy7ZPEeWA56eHuplmrg _Jdku0LZPEeWA56eHuplmrg" navigableOwnedEnd="_Jdkuy7ZPEeWA56eHuplmrg _Jdku0LZPEeWA56eHuplmrg">
+<eAnnotations xmi:id="_JdkuybZPEeWA56eHuplmrg" source="genmymodel">
+<details xmi:id="_JdkuyrZPEeWA56eHuplmrg" key="uuid" value="_mHkF0CSnEDOo-bsjhpyXmg"/>
+</eAnnotations>
+<ownedEnd xmi:id="_Jdkuy7ZPEeWA56eHuplmrg" name="manyToManyOwnerEntity" type="_JdkuorZPEeWA56eHuplmrg" aggregation="shared" association="_JdkuyLZPEeWA56eHuplmrg">
+<eAnnotations xmi:id="_JdkuzLZPEeWA56eHuplmrg" source="genmymodel">
+<details xmi:id="_JdkuzbZPEeWA56eHuplmrg" key="uuid" value="_mHhpkCSnEDOo-bsjhpyXmg"/>
+</eAnnotations>
+<lowerValue xsi:type="uml:LiteralInteger" xmi:id="_JdkuzrZPEeWA56eHuplmrg"/>
+<upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_Jdkuz7ZPEeWA56eHuplmrg" value="*"/>
+</ownedEnd>
+<ownedEnd xmi:id="_Jdku0LZPEeWA56eHuplmrg" name="multipleRelationalEntity" type="_JdkumbZPEeWA56eHuplmrg" association="_JdkuyLZPEeWA56eHuplmrg">
+<eAnnotations xmi:id="_Jdku0bZPEeWA56eHuplmrg" source="genmymodel">
+<details xmi:id="_Jdku0rZPEeWA56eHuplmrg" key="uuid" value="_mHjewCSnEDOo-bsjhpyXmg"/>
+</eAnnotations>
+<lowerValue xsi:type="uml:LiteralInteger" xmi:id="_Jdku07ZPEeWA56eHuplmrg"/>
+<upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_Jdku1LZPEeWA56eHuplmrg" value="*"/>
+</ownedEnd>
+</packagedElement>
+<packagedElement xsi:type="uml:Class" xmi:id="_Jdku1bZPEeWA56eHuplmrg" name="MultipleRelationalCustomFieldEntity">
+<eAnnotations xmi:id="_Jdku1rZPEeWA56eHuplmrg" source="genmymodel">
+<details xmi:id="_Jdku17ZPEeWA56eHuplmrg" key="uuid" value="_t-SxgCSnEDOo-bsjhpyXmg"/>
+</eAnnotations>
+<ownedAttribute xmi:id="_Jdku2LZPEeWA56eHuplmrg" name="fieldToDisplay">
+<eAnnotations xmi:id="_Jdku2bZPEeWA56eHuplmrg" source="genmymodel">
+<details xmi:id="_Jdku2rZPEeWA56eHuplmrg" key="uuid" value="_t-TYkCSnEDOo-bsjhpyXmg"/>
+</eAnnotations>
+</ownedAttribute>
+</packagedElement>
+<packagedElement xsi:type="uml:Association" xmi:id="_Jdku27ZPEeWA56eHuplmrg" name="MultipleRelationalCustomFieldEntity_OneToOneOwnerCustomFieldEntity" memberEnd="_Jdku3rZPEeWA56eHuplmrg _Jdku47ZPEeWA56eHuplmrg" navigableOwnedEnd="_Jdku3rZPEeWA56eHuplmrg _Jdku47ZPEeWA56eHuplmrg">
+<eAnnotations xmi:id="_Jdku3LZPEeWA56eHuplmrg" source="genmymodel">
+<details xmi:id="_Jdku3bZPEeWA56eHuplmrg" key="uuid" value="_yMURISSnEDOo-bsjhpyXmg"/>
+</eAnnotations>
+<ownedEnd xmi:id="_Jdku3rZPEeWA56eHuplmrg" name="oneToOneOwnerCustomFieldEntity" type="_JdkupbZPEeWA56eHuplmrg" aggregation="shared" association="_Jdku27ZPEeWA56eHuplmrg">
+<eAnnotations xmi:id="_Jdku37ZPEeWA56eHuplmrg" source="genmymodel">
+<details xmi:id="_Jdku4LZPEeWA56eHuplmrg" key="uuid" value="_yMTDACSnEDOo-bsjhpyXmg"/>
+</eAnnotations>
+<lowerValue xsi:type="uml:LiteralInteger" xmi:id="_Jdku4bZPEeWA56eHuplmrg" value="1"/>
+<upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_Jdku4rZPEeWA56eHuplmrg" value="1"/>
+</ownedEnd>
+<ownedEnd xmi:id="_Jdku47ZPEeWA56eHuplmrg" name="multipleRelationalCustomFieldEntity(<fieldToDisplay>)" type="_Jdku1bZPEeWA56eHuplmrg" association="_Jdku27ZPEeWA56eHuplmrg">
+<eAnnotations xmi:id="_Jdku5LZPEeWA56eHuplmrg" source="genmymodel">
+<details xmi:id="_Jdku5bZPEeWA56eHuplmrg" key="uuid" value="_yMURICSnEDOo-bsjhpyXmg"/>
+</eAnnotations>
+<lowerValue xsi:type="uml:LiteralInteger" xmi:id="_Jdku5rZPEeWA56eHuplmrg" value="1"/>
+<upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_Jdku57ZPEeWA56eHuplmrg" value="1"/>
+</ownedEnd>
+</packagedElement>
+<packagedElement xsi:type="uml:Association" xmi:id="_Jdku6LZPEeWA56eHuplmrg" name="MultipleRelationalCustomFieldEntity_OneToManyCustomFieldEntity" memberEnd="_Jdku67ZPEeWA56eHuplmrg _Jdku8LZPEeWA56eHuplmrg" navigableOwnedEnd="_Jdku67ZPEeWA56eHuplmrg _Jdku8LZPEeWA56eHuplmrg">
+<eAnnotations xmi:id="_Jdku6bZPEeWA56eHuplmrg" source="genmymodel">
+<details xmi:id="_Jdku6rZPEeWA56eHuplmrg" key="uuid" value="_0D9IMCSnEDOo-bsjhpyXmg"/>
+</eAnnotations>
+<ownedEnd xmi:id="_Jdku67ZPEeWA56eHuplmrg" name="oneToManyCustomFieldEntity" type="_JdkuqLZPEeWA56eHuplmrg" aggregation="shared" association="_Jdku6LZPEeWA56eHuplmrg">
+<eAnnotations xmi:id="_Jdku7LZPEeWA56eHuplmrg" source="genmymodel">
+<details xmi:id="_Jdku7bZPEeWA56eHuplmrg" key="uuid" value="_0D7TACSnEDOo-bsjhpyXmg"/>
+</eAnnotations>
+<lowerValue xsi:type="uml:LiteralInteger" xmi:id="_Jdku7rZPEeWA56eHuplmrg" value="1"/>
+<upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_Jdku77ZPEeWA56eHuplmrg" value="1"/>
+</ownedEnd>
+<ownedEnd xmi:id="_Jdku8LZPEeWA56eHuplmrg" name="multipleRelationalCustomFieldEntity(<fieldToDisplay>)" type="_Jdku1bZPEeWA56eHuplmrg" association="_Jdku6LZPEeWA56eHuplmrg">
+<eAnnotations xmi:id="_Jdku8bZPEeWA56eHuplmrg" source="genmymodel">
+<details xmi:id="_Jdku8rZPEeWA56eHuplmrg" key="uuid" value="_0D8hICSnEDOo-bsjhpyXmg"/>
+</eAnnotations>
+<lowerValue xsi:type="uml:LiteralInteger" xmi:id="_Jdku87ZPEeWA56eHuplmrg"/>
+<upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_Jdku9LZPEeWA56eHuplmrg" value="*"/>
+</ownedEnd>
+</packagedElement>
+<packagedElement xsi:type="uml:Association" xmi:id="_Jdku9bZPEeWA56eHuplmrg" name="MultipleRelationalCustomFieldEntity_ManyToManyOwnerCustomFieldEntity" memberEnd="_Jdku-LZPEeWA56eHuplmrg _Jdku_bZPEeWA56eHuplmrg" navigableOwnedEnd="_Jdku-LZPEeWA56eHuplmrg _Jdku_bZPEeWA56eHuplmrg">
+<eAnnotations xmi:id="_Jdku9rZPEeWA56eHuplmrg" source="genmymodel">
+<details xmi:id="_Jdku97ZPEeWA56eHuplmrg" key="uuid" value="_2WWooCSnEDOo-bsjhpyXmg"/>
+</eAnnotations>
+<ownedEnd xmi:id="_Jdku-LZPEeWA56eHuplmrg" name="manyToManyOwnerCustomFieldEntity" type="_Jdkuq7ZPEeWA56eHuplmrg" aggregation="shared" association="_Jdku9bZPEeWA56eHuplmrg">
+<eAnnotations xmi:id="_Jdku-bZPEeWA56eHuplmrg" source="genmymodel">
+<details xmi:id="_Jdku-rZPEeWA56eHuplmrg" key="uuid" value="_2WTlUCSnEDOo-bsjhpyXmg"/>
+</eAnnotations>
+<lowerValue xsi:type="uml:LiteralInteger" xmi:id="_Jdku-7ZPEeWA56eHuplmrg"/>
+<upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_Jdku_LZPEeWA56eHuplmrg" value="*"/>
+</ownedEnd>
+<ownedEnd xmi:id="_Jdku_bZPEeWA56eHuplmrg" name="multipleRelationalCustomFieldEntity(<fieldToDisplay>)" type="_Jdku1bZPEeWA56eHuplmrg" association="_Jdku9bZPEeWA56eHuplmrg">
+<eAnnotations xmi:id="_Jdku_rZPEeWA56eHuplmrg" source="genmymodel">
+<details xmi:id="_Jdku_7ZPEeWA56eHuplmrg" key="uuid" value="_2WWBkCSnEDOo-bsjhpyXmg"/>
+</eAnnotations>
+<lowerValue xsi:type="uml:LiteralInteger" xmi:id="_JdkvALZPEeWA56eHuplmrg"/>
+<upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_JdkvAbZPEeWA56eHuplmrg" value="*"/>
+</ownedEnd>
+</packagedElement>
+</uml:Model>

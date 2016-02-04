@@ -1,0 +1,1402 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="iris1" version="4">
+  <OBJECT>
+    <ID name="iris1" mc="Standard.Package" uid="508995af-6fde-42dc-b393-801d903e49e8"/>
+    <PID name="iris1" mc="Standard.Project" uid="7fa8ee5c-2573-43a0-9c01-ac366c8c74ee"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[iris1]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="ModuleLOV" mc="Standard.Class" uid="9de92940-ee85-4d3f-a6a2-182173da8ece"/>
+        <COMPID name="SchoolDetails" mc="Standard.Class" uid="f066016a-036f-49d9-8798-2cc764b7e732"/>
+        <OBJECT>
+          <ID name="InstitutionType" mc="Standard.Enumeration" uid="a5f851bc-5589-4311-9404-a754195589d3"/>
+          <ATTRIBUTES>
+            <ATT name="IsElementary">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[InstitutionType]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Value">
+              <OBJECT>
+                <ID name="K12" mc="Standard.EnumerationLiteral" uid="08284f63-a58f-46db-97d4-5d2b4aa54689"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[K12]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="HIGH" mc="Standard.EnumerationLiteral" uid="284bb1b9-b33a-4a78-9694-ca592d49c002"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[HIGH]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Standard.Note" uid="ae11e0b0-07d0-4c4e-a2d4-9df9424c64a6"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"></ATT>
+                        <ATT name="MimeType"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="description" mc="Standard.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <COMPID name="CountryLOV" mc="Standard.Class" uid="4a4cc201-2ba9-4e47-80ce-978256d1e43c"/>
+        <COMPID name="LanguageLOV" mc="Standard.Class" uid="73e3a834-8779-40f0-b25f-f8dd6905e5be"/>
+        <COMPID name="CurrancyLOV" mc="Standard.Class" uid="a701c5d7-16b7-4cea-8373-5c1501f1c496"/>
+        <COMPID name="User" mc="Standard.Class" uid="79e5cc82-c450-415c-b792-f242833a9c07"/>
+        <COMPID name="LocalDate" mc="Standard.DataType" uid="aa76424c-9086-40c7-b137-7f25661d420a"/>
+        <COMPID name="Course" mc="Standard.Class" uid="a50a507e-5250-42c7-9f85-dc7bca6f74e3"/>
+        <COMPID name="Section" mc="Standard.Class" uid="23777f8b-1028-42f9-bc8b-e660e4441efe"/>
+        <OBJECT>
+          <ID name="GradingType" mc="Standard.Enumeration" uid="e6f8c473-ccb0-47fd-8b02-83d8dc55d759"/>
+          <ATTRIBUTES>
+            <ATT name="IsElementary">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[GradingType]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Value">
+              <OBJECT>
+                <ID name="NORMAL" mc="Standard.EnumerationLiteral" uid="1bed6458-108d-48c0-873c-b00069130c70"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[NORMAL]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="GPA" mc="Standard.EnumerationLiteral" uid="f9c5163d-fb86-4980-94ca-958bbe1bec07"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[GPA]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <COMPID name="Subject" mc="Standard.Class" uid="a03b6b2c-f435-408c-b0f7-c8d9b06ca132"/>
+        <COMPID name="Student" mc="Standard.Class" uid="43b82318-26a5-4359-8041-4de9a61cc53c"/>
+        <COMPID name="ElectiveSubject" mc="Standard.Class" uid="6813f099-a18e-45f7-b9e6-445c3fcf61d9"/>
+        <COMPID name="Teacher" mc="Standard.Class" uid="ec5917b8-f7d6-4bfc-a57f-412b35c48915"/>
+        <COMPID name="StudentCategory" mc="Standard.Class" uid="b5073089-3029-419f-a294-9f0aad3f0d71"/>
+        <COMPID name="CustomAdmissionDetails" mc="Standard.Class" uid="84d0889c-438c-4a88-bf52-1ddccf462501"/>
+        <OBJECT>
+          <ID name="InputMethod" mc="Standard.Enumeration" uid="37caab5f-8829-4395-a8ea-ca1141433d72"/>
+          <ATTRIBUTES>
+            <ATT name="IsElementary">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[InputMethod]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Value">
+              <OBJECT>
+                <ID name="TEXT_BOX" mc="Standard.EnumerationLiteral" uid="ae4636d1-e40d-489d-a417-1a2026066482"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[TEXT_BOX]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Standard.Note" uid="11b579d4-329f-4728-bb92-6d4c4908e144"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[<Enter note text here>]]></ATT>
+                        <ATT name="MimeType"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="description" mc="Standard.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="NUMERIC_DROP_DOWN" mc="Standard.EnumerationLiteral" uid="b1fcc325-9d0f-4a92-80cc-cb1a482aaf51"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[NUMERIC_DROP_DOWN]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Standard.Note" uid="7902c050-19dc-425f-b223-a59bd3dc37b4"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[<Enter note text here>]]></ATT>
+                        <ATT name="MimeType"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="description" mc="Standard.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="CHECKBOX" mc="Standard.EnumerationLiteral" uid="ea40f04f-68f9-4cbf-addc-3ef77b237a91"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[CHECKBOX]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Standard.Note" uid="d3f398c5-eac3-4f65-b0f3-f65c5f62c2ca"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[<Enter note text here>]]></ATT>
+                        <ATT name="MimeType"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="description" mc="Standard.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Standard.Note" uid="d97d1421-be76-49f1-a2b4-9210834b1c70"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[<Enter note text here>]]></ATT>
+                  <ATT name="MimeType"></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="Standard.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <COMPID name="SmsSetting" mc="Standard.Class" uid="66b05e7e-935d-4be4-9786-815c47330598"/>
+        <COMPID name="AdmissionDetails" mc="Standard.Class" uid="f91ab24c-0260-4bff-ae2d-6c99daf10157"/>
+        <OBJECT>
+          <ID name="Gender" mc="Standard.Enumeration" uid="bff072f3-d5d0-40ae-b903-adc8276b3b26"/>
+          <ATTRIBUTES>
+            <ATT name="IsElementary">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[Gender]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Value">
+              <OBJECT>
+                <ID name="MALE" mc="Standard.EnumerationLiteral" uid="0f88b747-9652-4939-a29b-1960a91421b9"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[MALE]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="FEMALE" mc="Standard.EnumerationLiteral" uid="f26108f8-74b0-4e9a-87fe-db967da077a3"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[FEMALE]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Standard.Note" uid="7d89afcc-f8f9-4971-a85d-27747a43873f"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"></ATT>
+                  <ATT name="MimeType"></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="Standard.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="BloodGroup" mc="Standard.Enumeration" uid="a751c765-e9d2-4df0-ab35-5442c62a34a2"/>
+          <ATTRIBUTES>
+            <ATT name="IsElementary">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[BloodGroup]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Value">
+              <OBJECT>
+                <ID name="A_PLUS" mc="Standard.EnumerationLiteral" uid="f368e0d5-17e0-4dd3-b779-b6308c88077d"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[A_PLUS]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Standard.Note" uid="6943f4d0-309e-490e-94cf-cba64e83815f"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"></ATT>
+                        <ATT name="MimeType"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="description" mc="Standard.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="A_MINUS" mc="Standard.EnumerationLiteral" uid="ee95629c-2aaf-4ae5-b453-b3f7c8055658"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[A_MINUS]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="B_MINUS" mc="Standard.EnumerationLiteral" uid="2a389e20-1355-4abd-8c14-75b7d063c57d"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[B_MINUS]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="B_PLUS" mc="Standard.EnumerationLiteral" uid="e71100dd-8dfd-4f4e-9fdd-25194121a994"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[B_PLUS]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="O_MINUS" mc="Standard.EnumerationLiteral" uid="121660ce-cc7b-4ccd-bae9-7769a6070e9b"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[O_MINUS]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="O_PLUS" mc="Standard.EnumerationLiteral" uid="6336b128-442a-4678-8241-0bf5de9c6b76"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[O_PLUS]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="AB_PLUS" mc="Standard.EnumerationLiteral" uid="e93b00da-9b6a-46f3-83a2-7ebedf26003a"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[AB_PLUS]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="AB_MINUS" mc="Standard.EnumerationLiteral" uid="d765bd9c-53a1-4fbc-8178-bc6623918cfb"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[AB_MINUS]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <COMPID name="Address" mc="Standard.Class" uid="286f70df-0349-4f64-a215-9e0c0cd00ca3"/>
+        <COMPID name="Long" mc="Standard.DataType" uid="89539911-5f80-479d-8d72-93f93497ed1a"/>
+        <COMPID name="Parent" mc="Standard.Class" uid="3890aeca-2b75-4f26-89a8-d13d557dd5e5"/>
+        <COMPID name="IrisUser" mc="Standard.Class" uid="bbd95019-1219-456e-8b82-68a85c555188"/>
+        <COMPID name="PrevSchoolInfo" mc="Standard.Class" uid="c0efe52e-40a7-485a-b252-dbb8d80faf61"/>
+        <COMPID name="Employee" mc="Standard.Class" uid="01bbe4fb-3619-48e9-8d1e-e38d3888a687"/>
+        <OBJECT>
+          <ID name="EmployeeCategory" mc="Standard.Enumeration" uid="9dee09e8-57ff-4990-bb83-4d5a396a53fc"/>
+          <ATTRIBUTES>
+            <ATT name="IsElementary">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[EmployeeCategory]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Value">
+              <OBJECT>
+                <ID name="JR_TEACHER" mc="Standard.EnumerationLiteral" uid="c8b796d1-a48c-45e0-b3e1-6b266c5c78ba"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[JR_TEACHER]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="PRINCIPAL" mc="Standard.EnumerationLiteral" uid="ae1da103-a802-4edd-9221-461bebc4241b"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[PRINCIPAL]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="SYSTEM_ADMIN" mc="Standard.EnumerationLiteral" uid="c6c04a4c-9329-4c79-b32a-a0de09e4c67b"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[SYSTEM_ADMIN]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="LIBRARY_STAFF" mc="Standard.EnumerationLiteral" uid="dc14958f-9ad5-431b-89d6-e0447af32e43"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[LIBRARY_STAFF]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="HR_REP" mc="Standard.EnumerationLiteral" uid="23f598ff-9dbf-4f85-a737-4ea6472f71a8"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[HR_REP]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Standard.Note" uid="6296c4a2-50c7-4f04-b42e-f725365bd446"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[<Enter note text here>]]></ATT>
+                        <ATT name="MimeType"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="description" mc="Standard.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="SR_TEACHER" mc="Standard.EnumerationLiteral" uid="2fe7d313-8464-4e42-9d91-affa6fc1f772"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[SR_TEACHER]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <COMPID name="zonedDateTime" mc="Standard.DataType" uid="e2c0e82d-be78-46c1-8c22-19a106e720ad"/>
+        <COMPID name="Attendance" mc="Standard.Class" uid="5a9fc49b-ad1c-4115-bbd9-ba0f7f040f20"/>
+        <OBJECT>
+          <ID name="IrisUserRole" mc="Standard.Enumeration" uid="e7945524-b699-4c29-bd87-0e2f4bf783ec"/>
+          <ATTRIBUTES>
+            <ATT name="IsElementary">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[IrisUserRole]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Value">
+              <OBJECT>
+                <ID name="STUDENT" mc="Standard.EnumerationLiteral" uid="539101c7-1c57-417f-be2a-55912ed9593b"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[STUDENT]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Standard.Note" uid="22f25347-2fcf-4609-90d0-d0c5a890ed64"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[<Enter note text here>]]></ATT>
+                        <ATT name="MimeType"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="description" mc="Standard.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="STAFF" mc="Standard.EnumerationLiteral" uid="50af5bee-3b3d-4a59-80ed-7d804d936f0b"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[STAFF]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Standard.Note" uid="e7281fd5-a7bd-4a71-aeba-5b459dfe1ad4"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[<Enter note text here>]]></ATT>
+                        <ATT name="MimeType"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="description" mc="Standard.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <COMPID name="ClassRoomSession" mc="Standard.Class" uid="b86de7cf-1979-4c43-90d6-58c1c72a27ad"/>
+        <OBJECT>
+          <ID name="Days" mc="Standard.Enumeration" uid="e7873743-fdab-4a85-9b56-407c0d8a0d20"/>
+          <ATTRIBUTES>
+            <ATT name="IsElementary">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[Days]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Value">
+              <OBJECT>
+                <ID name="MONDAY" mc="Standard.EnumerationLiteral" uid="f0851ee1-2c1e-4e17-afaa-006857a6989f"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[MONDAY]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Standard.Note" uid="551407e7-5399-48c0-a57d-9d74b27e5a51"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[<Enter note text here>]]></ATT>
+                        <ATT name="MimeType"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="description" mc="Standard.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="TUESDAY" mc="Standard.EnumerationLiteral" uid="edebd829-aa9b-4f67-9806-eafcd5259aa0"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[TUESDAY]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="WEDNESDAY" mc="Standard.EnumerationLiteral" uid="21696c87-c232-4ddf-b365-79c3673ab3cd"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[WEDNESDAY]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="THURSDAY" mc="Standard.EnumerationLiteral" uid="470937fe-e74c-47cf-b240-7c6848e873fd"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[THURSDAY]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Standard.Note" uid="8fa88b02-841a-4189-b662-65b2dc2b2313"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[<Enter note text here>]]></ATT>
+                        <ATT name="MimeType"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="description" mc="Standard.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="FRIDAY" mc="Standard.EnumerationLiteral" uid="89a01561-b189-496b-835f-89cf2f2ba5d9"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[FRIDAY]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="SATURDAY" mc="Standard.EnumerationLiteral" uid="40004fbb-7b29-430d-9fe6-b46810186c51"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[SATURDAY]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Standard.Note" uid="258da38c-7497-4858-988a-313e4b4c1219"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[<Enter note text here>]]></ATT>
+                        <ATT name="MimeType"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="description" mc="Standard.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="SUNDAY" mc="Standard.EnumerationLiteral" uid="dfb88e77-45c2-49ad-8846-9e381241a8a5"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[SUNDAY]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Standard.Note" uid="e39384d8-e95d-47cf-a4f5-b5e266dc9a4c"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[<Enter note text here>]]></ATT>
+                        <ATT name="MimeType"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="description" mc="Standard.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <COMPID name="timeTable" mc="Standard.Class" uid="39fe6635-9df6-4cd2-b31a-d9761f7da833"/>
+        <COMPID name="TimeSlot" mc="Standard.Class" uid="094406d5-686b-4621-a21c-2e7b89f6e2f5"/>
+        <COMPID name="AcedemicSession" mc="Standard.Class" uid="62fb6a33-7892-40ba-bf62-74d453d86e7c"/>
+        <OBJECT>
+          <ID name="Experties" mc="Standard.Enumeration" uid="e2e0ee12-e95f-49ae-9bd8-7c1849972af6"/>
+          <ATTRIBUTES>
+            <ATT name="IsElementary">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[Experties]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Value">
+              <OBJECT>
+                <ID name="Math" mc="Standard.EnumerationLiteral" uid="81cb712b-489e-4689-8cfc-7d7d52ddee88"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Math]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Standard.Note" uid="b4556bdb-1469-4687-854d-1a73bf04574f"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[<Enter note text here>]]></ATT>
+                        <ATT name="MimeType"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="description" mc="Standard.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Science" mc="Standard.EnumerationLiteral" uid="02344238-90b6-452d-8e0c-91707d14980f"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Science]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="SocialStudies" mc="Standard.EnumerationLiteral" uid="f87f33a9-a570-42fa-aabb-0d830e2ed85d"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[SocialStudies]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Physics" mc="Standard.EnumerationLiteral" uid="30068dcf-ae09-4bbd-9899-7d375c88f028"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Physics]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Chemistry" mc="Standard.EnumerationLiteral" uid="86db90fb-f40a-469e-8375-c09c5642c661"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Chemistry]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="CourseGroup" mc="Standard.Enumeration" uid="18d3959a-7134-403e-95fb-b3fe8863431d"/>
+          <ATTRIBUTES>
+            <ATT name="IsElementary">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[CourseGroup]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Value">
+              <OBJECT>
+                <ID name="LKG" mc="Standard.EnumerationLiteral" uid="93dbcabd-e38a-4c6e-a7ec-35ccd23e85cc"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[LKG]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Standard.Note" uid="f5bccf70-739b-4424-a351-e2ff8f28e9f7"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[<Enter note text here>]]></ATT>
+                        <ATT name="MimeType"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="description" mc="Standard.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="UKG" mc="Standard.EnumerationLiteral" uid="5cbfbaf5-9a2a-4984-8c6b-c8e4d0ba71c3"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[UKG]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="JRSchool" mc="Standard.EnumerationLiteral" uid="88f86bf5-9659-46c0-9f8c-c12bc4a0f88b"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[JRSchool]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Standard.Note" uid="bc17f111-5a52-49a4-a0a4-adf422622b26"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[<Enter note text here>]]></ATT>
+                        <ATT name="MimeType"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="description" mc="Standard.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="MiddleSchool" mc="Standard.EnumerationLiteral" uid="e90dfec0-d093-4427-8296-6d9b5b65eebf"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[MiddleSchool]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="HighSchool" mc="Standard.EnumerationLiteral" uid="cd95a616-2575-4650-b345-8aaffc871353"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[HighSchool]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <COMPID name="Building" mc="Standard.Class" uid="27465bf6-87cf-4eae-8317-45d84ea776d3"/>
+        <COMPID name="Room" mc="Standard.Class" uid="e67927b6-b42c-4a64-84a1-10b6f51f4485"/>
+        <COMPID name="GradingLevel" mc="Standard.Class" uid="8ad52920-18de-43ed-9f98-ad955bbd4828"/>
+        <COMPID name="RankingLevel" mc="Standard.Class" uid="e8783513-99a6-4fc2-aee8-2cd4794c80f0"/>
+        <COMPID name="Exam" mc="Standard.Class" uid="c39b3204-f10c-4bf2-b537-9067867f5b0e"/>
+        <OBJECT>
+          <ID name="ExamType" mc="Standard.Enumeration" uid="72938391-7273-4d6c-986e-1def9bdb805d"/>
+          <ATTRIBUTES>
+            <ATT name="IsElementary">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[ExamType]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Value">
+              <OBJECT>
+                <ID name="Marks" mc="Standard.EnumerationLiteral" uid="aa9df39b-f756-4446-859a-ab81f5c47f54"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Marks]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Standard.Note" uid="d6439635-80ff-4499-a7f4-2fd276102d4a"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[<Enter note text here>]]></ATT>
+                        <ATT name="MimeType"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="description" mc="Standard.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Grades" mc="Standard.EnumerationLiteral" uid="7092c006-77bd-4000-93e5-25d33d94728a"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Grades]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Standard.Note" uid="a01b1f94-69e0-4cd0-b7ba-f7288de08acd"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"></ATT>
+                        <ATT name="MimeType"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="description" mc="Standard.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="MarksAndGrades" mc="Standard.EnumerationLiteral" uid="96fdd02a-6b98-42be-a9c9-80d50291bba1"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[MarksAndGrades]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Standard.Note" uid="9f10573b-b053-4541-a172-5a612f8883d6"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[<Enter note text here>]]></ATT>
+                        <ATT name="MimeType"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="description" mc="Standard.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Standard.Note" uid="ae5d5dd4-5bd3-471c-a96b-0f6bcd68e811"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[<Enter note text here>]]></ATT>
+                  <ATT name="MimeType"></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="Standard.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <COMPID name="ExamSubjects" mc="Standard.Class" uid="a54cdf51-e800-498e-8255-0d05612e3a32"/>
+        <OBJECT>
+          <ID name="ProgressStatus" mc="Standard.Enumeration" uid="c17e859c-98fc-463a-884b-79270db5120f"/>
+          <ATTRIBUTES>
+            <ATT name="IsElementary">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[ProgressStatus]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Value">
+              <OBJECT>
+                <ID name="IN_PROGRESS" mc="Standard.EnumerationLiteral" uid="c17278a5-0fd1-4cf9-b3c8-e6e33fc91eee"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[IN_PROGRESS]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Standard.Note" uid="19c9bebd-8da3-4171-98ff-d63892e7b759"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[<Enter note text here>]]></ATT>
+                        <ATT name="MimeType"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="description" mc="Standard.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="NEW" mc="Standard.EnumerationLiteral" uid="6d706c56-17ae-4e95-9d05-6c56c8071fdf"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[NEW]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Standard.Note" uid="841c7ed1-4b21-46c1-aa4a-fd655dd07d34"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[<Enter note text here>]]></ATT>
+                        <ATT name="MimeType"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="description" mc="Standard.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="COMPLETED" mc="Standard.EnumerationLiteral" uid="01e9d482-3cd9-41a5-911d-e0efbb215253"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[COMPLETED]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Standard.Note" uid="c6dbff1d-2d15-47cd-831f-b849c1fca499"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[<Enter note text here>]]></ATT>
+                        <ATT name="MimeType"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="description" mc="Standard.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Standard.Note" uid="33c63d97-dc0a-4d7c-85d2-b283c9f1eb7a"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[<Enter note text here>]]></ATT>
+                  <ATT name="MimeType"></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="Standard.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <COMPID name="SubjectExamResult" mc="Standard.Class" uid="96ccef25-10b4-404f-81c9-6563274cbed4"/>
+        <COMPID name="ExamResult" mc="Standard.Class" uid="aa632c91-5d91-4287-b5e2-ce0a064046b5"/>
+        <COMPID name="Events" mc="Standard.Class" uid="8b64834e-9e75-406e-acad-d1fe1cbbb338"/>
+        <COMPID name="Notice" mc="Standard.Class" uid="13b60daa-8509-4d16-98aa-f27bb6677efb"/>
+        <OBJECT>
+          <ID name="NoticeType" mc="Standard.Enumeration" uid="5a3c3c5a-32e9-48a2-8e9c-6aa4af11b7a4"/>
+          <ATTRIBUTES>
+            <ATT name="IsElementary">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[NoticeType]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Value">
+              <OBJECT>
+                <ID name="Notification" mc="Standard.EnumerationLiteral" uid="36ced2e8-31ad-48e4-b2ae-a7b0f5101695"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Notification]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Reminder" mc="Standard.EnumerationLiteral" uid="1868d72c-b464-4546-b796-6f840b19b97d"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Reminder]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Standard.Note" uid="c454ef22-4e13-43e8-a488-42cd6a8d9427"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[<Enter note text here>]]></ATT>
+                        <ATT name="MimeType"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="description" mc="Standard.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Query" mc="Standard.EnumerationLiteral" uid="6800042f-fc38-41d8-ace6-d36e004d17f1"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Query]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Standard.Note" uid="16426997-8dc4-4fe0-8f08-804f9b0eba32"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[<Enter note text here>]]></ATT>
+                        <ATT name="MimeType"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="description" mc="Standard.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="PriorityLevel" mc="Standard.Enumeration" uid="bae80a75-c461-4291-867c-5ce9601d40be"/>
+          <ATTRIBUTES>
+            <ATT name="IsElementary">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[PriorityLevel]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Value">
+              <OBJECT>
+                <ID name="High" mc="Standard.EnumerationLiteral" uid="f72ee423-88bd-4d67-a67c-5786635ab997"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[High]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Standard.Note" uid="604e5c5e-98d0-44ed-8350-e919fe021991"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[<Enter note text here>]]></ATT>
+                        <ATT name="MimeType"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="description" mc="Standard.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Normal" mc="Standard.EnumerationLiteral" uid="f62c3886-0a60-4762-a3fe-b6bc9922ff98"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Normal]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Standard.Note" uid="9a9067cd-3857-4cb0-b1fe-cf5eb3ea1810"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[<Enter note text here>]]></ATT>
+                        <ATT name="MimeType"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="description" mc="Standard.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Low" mc="Standard.EnumerationLiteral" uid="c7d91aea-854d-4989-bf63-d112d597c186"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Low]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Standard.Note" uid="b06afde6-ab61-41a0-b506-46f86067bf01"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[<Enter note text here>]]></ATT>
+                  <ATT name="MimeType"></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="Standard.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="NoticeSensitivity" mc="Standard.Enumeration" uid="bdb53325-5b72-4aea-b1fe-0bb4d8d85efc"/>
+          <ATTRIBUTES>
+            <ATT name="IsElementary">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[NoticeSensitivity]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Value">
+              <OBJECT>
+                <ID name="Personal" mc="Standard.EnumerationLiteral" uid="b17d76ef-f3a8-42e5-9e02-12947b94773f"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Personal]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Private" mc="Standard.EnumerationLiteral" uid="27f4edb0-b2e7-4528-a1f9-ffedd2db9c79"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Private]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Confedential" mc="Standard.EnumerationLiteral" uid="f9d7d1ce-61b0-4019-b560-932b54d0af27"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Confedential]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Normal" mc="Standard.EnumerationLiteral" uid="dc20350d-4860-41dc-9177-53998d8df6af"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Normal]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Standard.Note" uid="742ea02d-8a84-4bd0-9005-5c3f5ae6c2c3"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[<Enter note text here>]]></ATT>
+                        <ATT name="MimeType"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="description" mc="Standard.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="AttendanceType" mc="Standard.Enumeration" uid="e7fcfdf5-a3f7-4e2e-9b1b-e995df3343d1"/>
+          <ATTRIBUTES>
+            <ATT name="IsElementary">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[AttendanceType]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Value">
+              <OBJECT>
+                <ID name="Daily" mc="Standard.EnumerationLiteral" uid="581a4d85-953c-4656-88b2-cd549536929b"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Daily]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="weekly" mc="Standard.EnumerationLiteral" uid="3bbcbb65-5c01-48d8-b21f-2efe1c765a2d"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[weekly]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Standard.Note" uid="498cc2f0-f8aa-400e-89a9-97e04b05b1a7"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[<Enter note text here>]]></ATT>
+                  <ATT name="MimeType"></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="Standard.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="DateFormat" mc="Standard.Enumeration" uid="c04243f7-29e1-4c3b-a651-3283a3abe95e"/>
+          <ATTRIBUTES>
+            <ATT name="IsElementary">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[DateFormat]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Value">
+              <OBJECT>
+                <ID name="MMDDYYYY" mc="Standard.EnumerationLiteral" uid="669b3fc2-b3e6-4ca1-ae91-5c1870c8f180"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[MMDDYYYY]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Standard.Note" uid="6277824d-0e0c-4b6b-9aef-b4c3d32c51c8"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[<Enter note text here>]]></ATT>
+                        <ATT name="MimeType"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="description" mc="Standard.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="DDMMYYYY" mc="Standard.EnumerationLiteral" uid="6e4a0530-0240-4774-9ee5-adb250d1e74d"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[DDMMYYYY]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Standard.Note" uid="bb0867f6-9929-4432-8ba9-509b516448e1"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"></ATT>
+                        <ATT name="MimeType"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="description" mc="Standard.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="overview diagram" mc="Standard.ClassDiagram" uid="f9302cbb-d4bf-4662-b6da-0f5aede8ba93"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
